@@ -1,0 +1,34 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{verbatim,amsmath,amsfonts,amssymb,amsthm}
+\usepackage[english,polish]{babel}
+
+
+\usepackage[a4paper,hyperindex=true]{hyperref}
+\hypersetup{%
+pdftitle="Homeostaza wapniowa"
+}
+% Styl punktowania
+\newenvironment{bulletList}%
+{ \begin{list}%
+	{$\bullet$}%
+	{\setlength{\labelwidth}{25pt}%
+		\setlength{\leftmargin}{50pt}%
+		\setlength{\itemsep}{\parsep}}}%
+{ \end{list}}
+
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={210mm,297mm},
+	left=20mm,
+	right=20mm,
+	top=20mm,
+	bottom=20mm,
+}
+
+% dzielenie wierszy
+\widowpenalty=10000
+\clubpenalty=10000 
+\brokenpenalty=10000
