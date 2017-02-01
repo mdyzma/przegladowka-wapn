@@ -5,10 +5,18 @@
 
 
 \usepackage{filemod}
+\usepackage{lineno}  % numerowanie wierszy
 
-\usepackage[a4paper,hyperindex=true]{hyperref}
+%% Links in pdf
+\usepackage{color}
+\definecolor{linkcol}{rgb}{0,0,0.4}
+
+\usepackage[hidelinks]{hyperref}
 \hypersetup{%
-pdftitle="Homeostaza wapniowa"
+pdftitle="Inzynieria Biomedyczna",
+colorlinks=true,
+urlcolor=linkcol,
+linkcolor=linkcol,
 }
 
 \usepackage{memhfixc}
@@ -22,7 +30,7 @@ pdftitle="Homeostaza wapniowa"
 		\setlength{\itemsep}{\parsep}}}%
 { \end{list}}
 
-
+%
 \usepackage{geometry}
 \geometry{
 	a4paper,
