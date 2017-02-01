@@ -1,0 +1,76 @@
+% arara: pdflatex
+% arara: bibtex
+% arara: pdflatex
+% arara: pdflatex
+\documentclass[11pt,a4paper,twoside,openright,draft]{memoir}
+
+\include{ustawienia}
+
+\begin{document}
+
+% ===================================================================
+%       FRONT
+% ===================================================================
+
+	\frontmatter
+	\include{front/title}
+	\begin{KeepFromToc}
+		
+		\tableofcontents
+%		\clearpage
+%		\listoffigures
+%		\clearpage
+%		\listoftables
+	\end{KeepFromToc}
+
+% ===================================================================
+%       MAIN
+% ===================================================================
+
+	\mainmatter
+	\pagestyle{ruled}
+%	\OnehalfSpacing
+%	\linenumbers
+	\book{Modelowanie procesów fizjologicznych i~patologicznych}
+		
+		\part{Modelowanie matematyczne układów fizjologicznych}
+			
+			% lepiej, zeby kazdy z artykulow byl w osobnym pliku. Tytul jako \chapter i mozna zachowac sekscje z klasy article
+			\include{main/part_1/mod_rozkl_i_trans_wody}
+			\include{main/part_1/mod_fali_pulsu}
+			\chapter{Modelowanie układu krążenia, wybrane aspekty \\(K.~Zieliński)}
+			\chapter{Modelowanie krążenia mózgowego (K.~Cieślicki)}
+			\chapter{Modelowanie układu oddechowego (T.~Gólczewski)}
+			\chapter{Modelowanie interakcji oddechowo-krążeniowej (T.~Gólczewski,~K.~Zieliński)}
+			\chapter{Modelowanie metabolizmu mineralnego (M.~Dębowska)}
+			\chapter{Modelowanie metabolizmu węglowodanów, układ glukoza – insulina (J.~Waniewski, J.~Śmieja)}
+			\chapter{Modelowanie homeostazy cholesterolu (K.~Kubica,~M.~Żulpo,~J.~Balbus)}
+			\chapter{Modelowanie motoryki pęcherzyka żółciowego (M.~Żulpo,~J.~Balbus,~K.~Kubica)}
+			\chapter{Numeryczne modelowanie przepływu krwi, płynu mózgowo-rdzeniowego i~powietrza w rzeczywistych geometriach (A.~Piechna,~K.~Cieślicki)}
+			\chapter{Modelowanie mechaniki struktur tętniczych (K.~Cieślicki,~A.~Piechna)}
+			\chapter{Modelowanie procesów słuchowych w celu oceny ryzyka uszkodzeń słuchu (J.~Kotus,~A.~Czyżewski)}
+			
+			
+		\part{Modelowanie matematyczne procesów tkankowych i komórkowych}
+		
+			\chapter{Modelowanie procesów transportu wody i~substancji na poziomie tkankowym (J.~Stachowska-Piętka)}
+			\chapter{Modelowanie transportu światła w tkance (A.~Liebert)}
+			\chapter{Modelowanie transportu ciepła w tkance (A.~Nowakowski)}
+			\chapter{Modelowanie przepływu krwi przez chirurgiczne zespolenia naczyniowe (Z.~Małota,~J.~Waniewski)}
+			\chapter{Modelowanie przepływu krwi przez zastawki serca \\(Z.~Małota)}
+			\chapter{Modelowanie motoneuronu (M.~Piotrkiewicz)}
+			\chapter{Modelowanie sieci neuronów (T.~Bem)}
+			\chapter{Modelowanie odpowiedzi immunologicznej na rozwój nowotworu (J.~Poleszczuk, U.~Foryś)}
+	
+			\include{main/part_2/mod_wapnia_komorkowego}
+			\include{main/part_2/mod_sieci_sygn}
+
+% ===================================================================
+%       BACK
+% ===================================================================
+	\backmatter
+	%\include{rozdzialy/wnioski}
+	\bibliographystyle{ddabbrv}%ThesisStyle
+	\bibliography{library1}	
+
+\end{document}
