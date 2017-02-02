@@ -1,0 +1,29 @@
+[33mcommit e0832496e5e8d60ab54bed6d9375627c82bb694f[m
+Author: Michal Dyzma <mdyzma@gmail.com>
+Date:   Thu Feb 2 00:15:24 2017 +0100
+
+    Bez nawiasow
+
+[33mcommit 3ed3613058ca47f328591644540fcd07a00f5e53[m
+Author: Michal Dyzma <mdyzma@gmail.com>
+Date:   Wed Feb 1 20:00:48 2017 +0100
+
+    Hyperlinki - poprawione wyswietlnie i toc
+
+[33mcommit a75b39aa541bc02c39d6129ea0da0e14f7780fdd[m
+Author: Michal Dyzma <midy@gmv.com>
+Date:   Wed Feb 1 16:46:08 2017 +0100
+
+    Przeformatowane do klasy memoir
+
+[33mcommit 7b4987ff7e47456382dbeb1ca06eb67af5edfd1e[m
+Author: Michal Dyzma <mdyzma@gmail.com>
+Date:   Sun Jan 8 18:02:49 2017 +0100
+
+    Dodany abstrakt
+
+[33mcommit e1658773882743f5e36e969b3c8faa93c09916ff[m
+Author: Michal Dyzma <mdyzma@gmail.com>
+Date:   Tue Jan 3 01:42:25 2017 +0100
+
+    Initial commit
